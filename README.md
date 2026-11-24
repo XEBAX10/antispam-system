@@ -54,7 +54,7 @@ scripts/
   seed.py          -> datos sintéticos (50.000+ CDRs)
 ```
 
-## Endpoints de catálogo (Persona 1)
+## Endpoints de catálogo 
 
 | Método | Ruta                          | RF    |
 |--------|-------------------------------|-------|
@@ -100,13 +100,13 @@ No se puede borrar una operadora con troncales/prefijos, ni una troncal o prefij
 
 | Clave                     | Tipo        | TTL    | Responsable |
 |---------------------------|-------------|--------|-------------|
-| `whitelist:{numero}`      | String      | Opcional | Persona 4 |
-| `bloqueo:{numero}`        | Hash        | 24 h   | Persona 3   |
-| `cuarentena:{numero}`     | String      | 30 min | Persona 2   |
-| `rate:{numero}:{minuto}`  | String INCR | 120 s  | Persona 2   |
-| `ultracortas:{numero}`    | String      | 10 min | Persona 2   |
-| `idx:bloqueos`            | Sorted Set  | No     | Persona 3   |
-| `alertas:propagacion`     | Pub/Sub     | No     | Persona 3   |
+| `whitelist:{numero}`      | String      | Opcional | santiago montoya |
+| `bloqueo:{numero}`        | Hash        | 24 h   | joan villamil |
+| `cuarentena:{numero}`     | String      | 30 min | vanessa duran   |
+| `rate:{numero}:{minuto}`  | String INCR | 120 s  | vanessa duran   |
+| `ultracortas:{numero}`    | String      | 10 min | vanessa duran  |
+| `idx:bloqueos`            | Sorted Set  | No     | joan villamil |
+| `alertas:propagacion`     | Pub/Sub     | No     | joan villamil |
 
 Números en formato E.164 sin `+`: `573001234567`.
 
